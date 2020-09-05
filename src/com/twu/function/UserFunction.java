@@ -63,6 +63,7 @@ public class UserFunction extends CommonFunction {
                     }
                 }
             }
+            System.out.println("购买成功。");
         }
 
         if (Integer.parseInt(buyMoney)>myMoney && myMoney!=0){// 购买成功，且被替换热搜是购买热搜，则删除原本在该rank位置的热搜
@@ -85,6 +86,7 @@ public class UserFunction extends CommonFunction {
             // 购买成功后，设置被购买热搜的rank以及myMoney
             hotSearchMap.get(hotSearchWantToBuy).setRank(Integer.parseInt(hotSearchRankWantToBuy));
             hotSearchMap.get(hotSearchWantToBuy).setMyMoney(Integer.parseInt(buyMoney));
+            System.out.println("购买成功。");
         }
 
     }
